@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serviços do Pet Shop Amigo Fiel: banho e tosa, veterinária, pet sitter e taxi pet.">
+  <title>Serviços | Pet Shop Amigo Fiel</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+<script>
+    (function () {
+      try {
+        var t = localStorage.getItem('af-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Pet Shop Amigo Fiel - Página inicial">
+        <span class="logo__icon" aria-hidden="true">🐾</span>
+        <span class="logo__text">Amigo<span>Fiel</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Início</a></li>
+          <li><a href="servicos.html" class="nav__link is-active" aria-current="page">Serviços</a></li>
+          <li><a href="produtos.html" class="nav__link">Produtos</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre nós</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+        <a href="contato.html#agendamento" class="btn btn--primary nav__cta">Agendar horário</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro e escuro">
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="deco-paw deco-paw--tr" aria-hidden="true">🐾</span>
+      <div class="container">
+        <h1>Nossos <em>Serviços</em></h1>
+        <p>Cuidados completos para o bem-estar do seu pet.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="services-list">
+          <article class="service-card" data-reveal>
+            <span class="service-card__icon" aria-hidden="true">🛁</span>
+            <div class="service-card__body">
+              <h2>Banho e Tosa</h2>
+              <p>Banho completo com produtos hipoalergênicos, tosa higiênica e finalização com perfume.</p>
+              <ul>
+                <li>Banho e tosa na medida</li>
+                <li>Limpeza de ouvidos</li>
+                <li>Corte de unhas</li>
+              </ul>
+            </div>
+            <a href="contato.html#agendamento" class="btn btn--primary">Agendar</a>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <span class="service-card__icon" aria-hidden="true">🩺</span>
+            <div class="service-card__body">
+              <h2>Veterinária</h2>
+              <p>Consultas preventivas, vacinação e exames com clínicos dedicados.</p>
+              <ul>
+                <li>Check-up completo</li>
+                <li>Vacinação e vermífugos</li>
+                <li>Exames laboratoriais</li>
+              </ul>
+            </div>
+            <a href="contato.html#agendamento" class="btn btn--primary">Agendar</a>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <span class="service-card__icon" aria-hidden="true">🏠</span>
+            <div class="service-card__body">
+              <h2>Pet Sitter</h2>
+              <p>Cuidamos do seu pet na sua casa enquanto você viaja ou trabalha.</p>
+              <ul>
+                <li>Passeios diários</li>
+                <li>Alimentação no horário</li>
+                <li>Envio de fotos e vídeos</li>
+              </ul>
+            </div>
+            <a href="contato.html#agendamento" class="btn btn--primary">Agendar</a>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <span class="service-card__icon" aria-hidden="true">🚗</span>
+            <div class="service-card__body">
+              <h2>Taxi Pet</h2>
+              <p>Transporte seguro e confortável para consultas, banhos e passeios.</p>
+              <ul>
+                <li>Busca e entrega em casa</li>
+                <li>Motoristas treinados</li>
+                <li>Atendimento para emergências</li>
+              </ul>
+            </div>
+            <a href="contato.html#agendamento" class="btn btn--primary">Agendar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2>Pronto para cuidar do seu pet?</h2>
+        <p>Agende agora pelo WhatsApp ou pelo formulário de contato.</p>
+        <a href="contato.html#agendamento" class="btn btn--light">Agendar horário</a>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--footer">
+          <span class="logo__icon" aria-hidden="true">🐾</span>
+          <span class="logo__text">Amigo<span>Fiel</span></span>
+        </a>
+        <p>Cuidando do seu melhor amigo com dedicação desde 2014.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <h3>Contato</h3>
+        <ul>
+          <li>📍 Rua das Flores, 123 – Centro</li>
+          <li>📞 (11) 99999-0000</li>
+          <li>✉️ ola@amigofiel.com.br</li>
+          <li>🕐 Seg a Sáb, 8h às 19h</li>
+        </ul>
+      </div>
+      <div class="footer__news">
+        <h3>Novidades</h3>
+        <p>Receba dicas e ofertas no seu e-mail.</p>
+        <form class="newsletter" id="newsletterForm" novalidate>
+          <label class="sr-only" for="newsEmail">Seu e-mail</label>
+          <input type="email" id="newsEmail" name="email" placeholder="Digite seu e-mail" required>
+          <button type="submit" class="btn btn--primary">Assinar</button>
+        </form>
+        <p class="form__msg" id="newsMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Pet Shop Amigo Fiel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Quero%20agendar%20um%20atendimento%20no%20Amigo%20Fiel" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <span aria-hidden="true">💬</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+</body>
+</html>
