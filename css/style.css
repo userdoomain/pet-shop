@@ -530,12 +530,12 @@ h1, h2, h3 {
 }
 
 .hero__stats strong {
-display: block;
-font-family: var(--font-display);
-font-size: 2.5rem;
-font-weight: 800;
-color: var(--color-accent);
-line-height: 1.1;
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1.1;
 }
 
 .hero__stats span {
