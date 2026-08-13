@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Produtos do Pet Shop Amigo Fiel: rações, brinquedos, acessórios e muito mais.">
+  <title>Produtos | Pet Shop Amigo Fiel</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+<script>
+    (function () {
+      try {
+        var t = localStorage.getItem('af-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Pet Shop Amigo Fiel - Página inicial">
+        <span class="logo__icon" aria-hidden="true">🐾</span>
+        <span class="logo__text">Amigo<span>Fiel</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Início</a></li>
+          <li><a href="servicos.html" class="nav__link">Serviços</a></li>
+          <li><a href="produtos.html" class="nav__link is-active" aria-current="page">Produtos</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre nós</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+        <a href="contato.html#agendamento" class="btn btn--primary nav__cta">Agendar horário</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro e escuro">
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="deco-paw deco-paw--tr" aria-hidden="true">🐾</span>
+      <div class="container">
+        <h1>Nossa <em>Loja</em></h1>
+        <p>Produtos selecionados para o bem-estar do seu pet.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="shop__toolbar">
+          <div class="shop__filters" role="group" aria-label="Filtrar produtos por categoria">
+            <button class="chip is-active" data-filter="todos">Todos</button>
+            <button class="chip" data-filter="racao">Rações</button>
+            <button class="chip" data-filter="brinquedos">Brinquedos</button>
+            <button class="chip" data-filter="acessorios">Acessórios</button>
+            <button class="chip" data-filter="higiene">Higiene</button>
+          </div>
+          <p class="shop__count" id="productCount" aria-live="polite"></p>
+        </div>
+        <div class="grid grid--4" id="productGrid"></div>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--footer">
+          <span class="logo__icon" aria-hidden="true">🐾</span>
+          <span class="logo__text">Amigo<span>Fiel</span></span>
+        </a>
+        <p>Cuidando do seu melhor amigo com dedicação desde 2014.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <h3>Contato</h3>
+        <ul>
+          <li>📍 Rua das Flores, 123 – Centro</li>
+          <li>📞 (11) 99999-0000</li>
+          <li>✉️ ola@amigofiel.com.br</li>
+          <li>🕐 Seg a Sáb, 8h às 19h</li>
+        </ul>
+      </div>
+      <div class="footer__news">
+        <h3>Novidades</h3>
+        <p>Receba dicas e ofertas no seu e-mail.</p>
+        <form class="newsletter" id="newsletterForm" novalidate>
+          <label class="sr-only" for="newsEmail">Seu e-mail</label>
+          <input type="email" id="newsEmail" name="email" placeholder="Digite seu e-mail" required>
+          <button type="submit" class="btn btn--primary">Assinar</button>
+        </form>
+        <p class="form__msg" id="newsMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Pet Shop Amigo Fiel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Quero%20agendar%20um%20atendimento%20no%20Amigo%20Fiel" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <span aria-hidden="true">💬</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+</body>
+</html>
