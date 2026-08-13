@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a história do Pet Shop Amigo Fiel: mais de 10 anos cuidando de cães e gatos.">
+  <title>Sobre nós | Pet Shop Amigo Fiel</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+<script>
+    (function () {
+      try {
+        var t = localStorage.getItem('af-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Pet Shop Amigo Fiel - Página inicial">
+        <span class="logo__icon" aria-hidden="true">🐾</span>
+        <span class="logo__text">Amigo<span>Fiel</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Início</a></li>
+          <li><a href="servicos.html" class="nav__link">Serviços</a></li>
+          <li><a href="produtos.html" class="nav__link">Produtos</a></li>
+          <li><a href="sobre.html" class="nav__link is-active" aria-current="page">Sobre nós</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+        <a href="contato.html#agendamento" class="btn btn--primary nav__cta">Agendar horário</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro e escuro">
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="deco-paw deco-paw--tr" aria-hidden="true">🐾</span>
+      <div class="container">
+        <h1>Sobre o <em>Amigo Fiel</em></h1>
+        <p>Uma história de amor pelos pets, desde 2014.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container about__grid">
+        <div class="about__text" data-reveal>
+          <h2 class="section__title">Nossa história</h2>
+          <p>O Pet Shop Amigo Fiel nasceu do sonho de oferecer um cuidado genuíno para cães e gatos.
+             Começamos com banho e tosa em 2014 e, com o tempo, crescemos para oferecer a estrutura
+             completa que você vê hoje: veterinária, hotelzinho, taxi pet e uma loja com produtos
+             selecionados.</p>
+          <p>Nossa equipe é formada por apaixonados por animais, dedicada em dar atenção, carinho
+             e o melhor atendimento para a sua família peluda.</p>
+          <ul class="about__list">
+            <li>Equipe treinada e apaixonada</li>
+            <li>Instalações seguras e acolhedoras</li>
+            <li>Mais de 8 mil pets atendidos</li>
+          </ul>
+        </div>
+        <div class="about__block" data-reveal>
+          <article>
+            <span aria-hidden="true">🏆</span>
+            <h3>10+ anos de experiência</h3>
+            <p>Cuidando de cães e gatos com carinho.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">🐾</span>
+            <h3>8.000+ pets atendidos</h3>
+            <p>E muitas famílias felizes.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">💛</span>
+            <h3>4.9 de avaliação média</h3>
+            <p>Baseada em avaliações de clientes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted">
+      <div class="container">
+        <h2 class="section__title" data-reveal>Marcos da nossa trajetória</h2>
+        <p class="section__subtitle" data-reveal>Como crescemos ao longo dos anos.</p>
+        <div class="timeline">
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__year">2014</span>
+            <h3>Fundação</h3>
+            <p>Abrimos as portas com banho e tosa.</p>
+          </div>
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__year">2018</span>
+            <h3>Veterinária</h3>
+            <p>Começamos a oferecer atendimento clínico.</p>
+          </div>
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__year">2022</span>
+            <h3>Loja completa</h3>
+            <p>Ampliamos o espaço com mais produtos.</p>
+          </div>
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__year">2026</span>
+            <h3>Hoje</h3>
+            <p>Uma equipe grande e pronta para cuidar do seu pet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--footer">
+          <span class="logo__icon" aria-hidden="true">🐾</span>
+          <span class="logo__text">Amigo<span>Fiel</span></span>
+        </a>
+        <p>Cuidando do seu melhor amigo com dedicação desde 2014.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <h3>Contato</h3>
+        <ul>
+          <li>📍 Rua das Flores, 123 – Centro</li>
+          <li>📞 (11) 99999-0000</li>
+          <li>✉️ ola@amigofiel.com.br</li>
+          <li>🕐 Seg a Sáb, 8h às 19h</li>
+        </ul>
+      </div>
+      <div class="footer__news">
+        <h3>Novidades</h3>
+        <p>Receba dicas e ofertas no seu e-mail.</p>
+        <form class="newsletter" id="newsletterForm" novalidate>
+          <label class="sr-only" for="newsEmail">Seu e-mail</label>
+          <input type="email" id="newsEmail" name="email" placeholder="Digite seu e-mail" required>
+          <button type="submit" class="btn btn--primary">Assinar</button>
+        </form>
+        <p class="form__msg" id="newsMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Pet Shop Amigo Fiel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Quero%20agendar%20um%20atendimento%20no%20Amigo%20Fiel" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <span aria-hidden="true">💬</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+</body>
+</html>
