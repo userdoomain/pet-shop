@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pet Shop Amigo Fiel - Tudo para o seu pet: banho e tosa, veterinário, produtos e muito mais.">
+  <title>Pet Shop Amigo Fiel | Cuidado completo para seu pet</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('af-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Pet Shop Amigo Fiel - Página inicial">
+        <span class="logo__icon" aria-hidden="true">🐾</span>
+        <span class="logo__text">Amigo<span>Fiel</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link is-active" aria-current="page">Início</a></li>
+          <li><a href="servicos.html" class="nav__link">Serviços</a></li>
+          <li><a href="produtos.html" class="nav__link">Produtos</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre nós</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+        <a href="contato.html#agendamento" class="btn btn--primary nav__cta">Agendar horário</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro e escuro">
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">🐶 Bem-vindo ao Amigo Fiel</span>
+          <h1 class="hero__title">Amor e cuidado <br>para o seu <em>melhor amigo</em></h1>
+          <p class="hero__subtitle">Há mais de 10 anos cuidando de cães e gatos com carinho, profissionalismo e os melhores produtos do mercado.</p>
+          <div class="hero__actions">
+            <a href="servicos.html" class="btn btn--primary">Conhecer serviços</a>
+            <a href="contato.html" class="btn btn--ghost">Fale conosco</a>
+          </div>
+          <ul class="hero__stats">
+            <li data-reveal><strong><span class="stat-counter" data-target="10">10</span>+</strong><span>anos de experiência</span></li>
+            <li data-reveal><strong><span class="stat-counter" data-target="8" data-suffix="k">8</span>k+</strong><span>pets atendidos</span></li>
+            <li data-reveal><strong><span class="stat-counter" data-target="4.9" data-decimals="1">4.9</span>★</strong><span>avaliação média</span></li>
+          </ul>
+        </div>
+        <div class="hero__image" role="img" aria-label="Cachorro caramelo sentado e feliz, com um osso atrás dele">
+          <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" class="hero__svg">
+            <defs>
+              <radialGradient id="cachorrinhoSol" cx="0.5" cy="0.45" r="0.55">
+                <stop offset="0%" stop-color="#ffd36b"/>
+                <stop offset="100%" stop-color="#ff8a3d"/>
+              </radialGradient>
+              <linearGradient id="peloCao" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#f7a82c"/>
+                <stop offset="100%" stop-color="#e8821a"/>
+              </linearGradient>
+              <linearGradient id="peloEscuro" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#e1881f"/>
+                <stop offset="100%" stop-color="#c46e14"/>
+              </linearGradient>
+              <radialGradient id="ossoGrad" cx="0.5" cy="0.35" r="0.7">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="100%" stop-color="#e8d4a8"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Sol de fundo -->
+            <circle cx="210" cy="200" r="185" fill="url(#cachorrinhoSol)" opacity="0.22"/>
+            <circle cx="210" cy="200" r="150" fill="url(#cachorrinhoSol)" opacity="0.30"/>
+
+            <!-- Estrelinhas piscando -->
+            <g fill="#ffd93b">
+              <path d="M120 52 L124 60 L132 62 L125 68 L127 77 L120 72 L113 77 L115 68 L108 62 L116 60 Z">
+                <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite"/>
+              </path>
+              <path d="M296 44 L298 48 L303 49 L299 53 L300 58 L296 55 L292 58 L293 53 L289 49 L294 48 Z">
+                <animate attributeName="opacity" values="1;0.45;1" dur="2.8s" begin="0.6s" repeatCount="indefinite"/>
+              </path>
+              <path d="M374 148 L376 152 L381 153 L377 157 L378 162 L374 159 L370 162 L371 157 L367 153 L372 152 Z">
+                <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" begin="1.2s" repeatCount="indefinite"/>
+              </path>
+              <path d="M40 320 L42 324 L46 325 L43 328 L44 332 L40 330 L36 332 L37 328 L34 325 L38 324 Z">
+                <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+              </path>
+            </g>
+
+            <!-- Nuvem -->
+            <g>
+              <ellipse cx="340" cy="118" rx="24" ry="9" fill="#fff" opacity="0.85">
+                <animate attributeName="opacity" values="0.85;0.55;0.85" dur="3.6s" repeatCount="indefinite"/>
+              </ellipse>
+              <ellipse cx="352" cy="110" rx="18" ry="7" fill="#fff" opacity="0.7"/>
+              <ellipse cx="330" cy="106" rx="15" ry="6" fill="#fff" opacity="0.75"/>
+            </g>
+
+            <!-- Corações flutuando -->
+            <g fill="#ff5f6e">
+              <g transform="translate(70 130)">
+                <animateTransform attributeName="transform" type="translate" values="70 130; 66 118; 70 130" dur="2.8s" repeatCount="indefinite"/>
+                <path d="M0 0 C 4 -6 12 -8 14 -3 C 16 -9 24 -6 22 2 C 20 9 4 18 4 18 C 4 18 -12 9 -14 2 C -16 -6 -8 -9 -6 -3 C -4 -8 0 0 0 0 Z" transform="scale(0.5)">
+                  <animate attributeName="opacity" values="0;0.9;0" dur="2.8s" repeatCount="indefinite"/>
+                </path>
+              </g>
+              <g transform="translate(344 250)">
+                <animateTransform attributeName="transform" type="translate" values="344 250; 342 240; 344 250" dur="3.2s" begin="1s" repeatCount="indefinite"/>
+                <path d="M0 0 C 4 -6 12 -8 14 -3 C 16 -9 24 -6 22 2 C 20 9 4 18 4 18 C 4 18 -12 9 -14 2 C -16 -6 -8 -9 -6 -3 C -4 -8 0 0 0 0 Z" transform="scale(0.42)">
+                  <animate attributeName="opacity" values="0;0.9;0" dur="3.2s" begin="1s" repeatCount="indefinite"/>
+                </path>
+              </g>
+            </g>
+
+            <!-- Sombra no chão -->
+            <ellipse cx="210" cy="388" rx="140" ry="14" fill="#000" opacity="0.14"/>
+            <!-- Grama -->
+            <ellipse cx="210" cy="402" rx="160" ry="10" fill="#9fd07a" opacity="0.55"/>
+            <g fill="#7cb95e">
+              <path d="M60 402 L64 388 L68 402 Z"/>
+              <path d="M88 404 L93 392 L98 404 Z"/>
+              <path d="M320 402 L324 390 L328 402 Z"/>
+              <path d="M352 404 L356 394 L360 404 Z"/>
+            </g>
+
+            <!-- Osso ATRÁS do cachorro (semi-escondido à esquerda) -->
+            <g transform="rotate(-22 150 356)">
+              <g>
+                <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="2.2s" repeatCount="indefinite"/>
+                <!-- corpo do osso -->
+                <rect x="92" y="350" width="78" height="18" rx="6" fill="url(#ossoGrad)" stroke="#d9bf8a" stroke-width="2.5"/>
+                <!-- nós do osso (clássicos: 3 bolinhas em cada ponta) -->
+                <circle cx="88" cy="350" r="9" fill="url(#ossoGrad)" stroke="#d9bf8a" stroke-width="2.5"/>
+                <circle cx="88" cy="368" r="9" fill="url(#ossoGrad)" stroke="#d9bf8a" stroke-width="2.5"/>
+                <circle cx="98" cy="358" r="7.5" fill="url(#ossoGrad)" stroke="#d9bf8a" stroke-width="2.5"/>
+                <circle cx="174" cy="350" r="9" fill="url(#ossoGrad)" stroke="#d9bf8a" stroke-width="2.5"/>
+                <circle cx="174" cy="368" r="9" fill="url(#ossoGrad)" stroke="#d9bf8a" stroke-width="2.5"/>
+                <circle cx="164" cy="358" r="7.5" fill="url(#ossoGrad)" stroke="#d9bf8a" stroke-width="2.5"/>
+                <!-- sombra interna do osso -->
+                <rect x="94" y="362" width="74" height="4" rx="2" fill="#d9bf8a" opacity="0.35"/>
+              </g>
+            </g>
+
+            <!-- Patas traseiras (atrás) -->
+            <ellipse cx="138" cy="352" rx="40" ry="32" fill="url(#peloEscuro)" stroke="#c46e14" stroke-width="4"/>
+            <ellipse cx="282" cy="352" rx="40" ry="32" fill="url(#peloEscuro)" stroke="#c46e14" stroke-width="4"/>
+
+            <!-- Corpo -->
+            <g>
+              <ellipse cx="210" cy="320" rx="92" ry="80" fill="url(#peloCao)" stroke="#d57d1d" stroke-width="5">
+                <animate attributeName="ry" values="80;82;80" dur="3.6s" repeatCount="indefinite"/>
+              </ellipse>
+              <!-- barriga mais clara -->
+              <ellipse cx="210" cy="344" rx="52" ry="42" fill="#ffd9a0" opacity="0.45"/>
+            </g>
+
+            <!-- Patas dianteiras -->
+            <rect x="172" y="338" width="30" height="58" rx="15" fill="url(#peloCao)" stroke="#d57d1d" stroke-width="4"/>
+            <rect x="218" y="338" width="30" height="58" rx="15" fill="url(#peloCao)" stroke="#d57d1d" stroke-width="4"/>
+            <!-- dedinhos das patas -->
+            <ellipse cx="178" cy="394" rx="16" ry="11" fill="#ffe2b0" stroke="#d9a05c" stroke-width="3"/>
+            <ellipse cx="242" cy="394" rx="16" ry="11" fill="#ffe2b0" stroke="#d9a05c" stroke-width="3"/>
+            <circle cx="172" cy="394" r="3" fill="#d9a05c"/>
+            <circle cx="184" cy="394" r="3" fill="#d9a05c"/>
+            <circle cx="236" cy="394" r="3" fill="#d9a05c"/>
+            <circle cx="248" cy="394" r="3" fill="#d9a05c"/>
+
+            <!-- Coleira -->
+            <rect x="160" y="238" width="100" height="16" rx="6" fill="#ff5f6e" stroke="#e84a5c" stroke-width="3"/>
+            <!-- medalha -->
+            <circle cx="210" cy="266" r="13" fill="#ffd23f" stroke="#e0b000" stroke-width="3"/>
+            <text x="210" y="271" text-anchor="middle" font-size="13" font-family="Poppins, sans-serif" font-weight="800" fill="#a07400">🐾</text>
+
+            <!-- Cabeça -->
+            <ellipse cx="210" cy="156" rx="80" ry="74" fill="url(#peloCao)" stroke="#d57d1d" stroke-width="5"/>
+
+            <!-- Orelhas caídas -->
+            <path d="M 130 96 C 80 80 56 122 78 176 C 92 210 138 224 150 176 C 156 134 144 110 130 96 Z" fill="url(#peloEscuro)" stroke="#c46e14" stroke-width="4"/>
+            <path d="M 290 96 C 340 80 364 122 342 176 C 328 210 282 224 270 176 C 264 134 276 110 290 96 Z" fill="url(#peloEscuro)" stroke="#c46e14" stroke-width="4"/>
+            <!-- interior das orelhas -->
+            <path d="M 128 110 C 100 102 86 130 100 160 C 110 176 130 178 138 158 C 144 138 140 122 128 110 Z" fill="#ffd9a0" opacity="0.55"/>
+            <path d="M 292 110 C 320 102 334 130 320 160 C 310 176 290 178 282 158 C 276 138 280 122 292 110 Z" fill="#ffd9a0" opacity="0.55"/>
+
+            <!-- Sobrancelhas -->
+            <path d="M 162 116 Q 174 108 188 114 Q 176 122 162 116 Z" fill="#c46e14"/>
+            <path d="M 232 114 Q 246 108 258 116 Q 244 122 232 114 Z" fill="#c46e14"/>
+
+            <!-- Olhos: branco + pupila + highlight + linha de pálpebra que aparece no piscar -->
+            <!-- olho esquerdo -->
+            <ellipse cx="170" cy="148" rx="20" ry="17" fill="#fff" stroke="#c46e14" stroke-width="1.5">
+              <animate attributeName="ry" values="17;17;17;1.5;17;17" keyTimes="0;0.6;0.92;0.95;0.97;1" dur="5s" repeatCount="indefinite"/>
+            </ellipse>
+            <circle cx="172" cy="149" r="11" fill="#3d2314">
+              <animate attributeName="r" values="11;11;11;1.5;11;11" keyTimes="0;0.6;0.92;0.95;0.97;1" dur="5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="176" cy="143" r="4" fill="#fff" opacity="0.95">
+              <animate attributeName="r" values="4;4;4;0;4;4" keyTimes="0;0.6;0.92;0.95;0.97;1" dur="5s" repeatCount="indefinite"/>
+            </circle>
+            <!-- linha da pálpebra (curva escura) aparece só Pisca -->
+            <path d="M 150 148 Q 170 142 190 148" stroke="#3d2314" stroke-width="3" fill="none" stroke-linecap="round" opacity="0">
+              <animate attributeName="opacity" values="0;0;0;1;0;0" keyTimes="0;0.6;0.92;0.95;0.97;1" dur="5s" repeatCount="indefinite"/>
+            </path>
+
+            <!-- olho direito -->
+            <ellipse cx="250" cy="148" rx="20" ry="17" fill="#fff" stroke="#c46e14" stroke-width="1.5">
+              <animate attributeName="ry" values="17;17;17;1.5;17;17" keyTimes="0;0.6;0.92;0.95;0.97;1" dur="5s" repeatCount="indefinite"/>
+            </ellipse>
+            <circle cx="248" cy="149" r="11" fill="#3d2314">
+              <animate attributeName="r" values="11;11;11;1.5;11;11" keyTimes="0;0.6;0.92;0.95;0.97;1" dur="5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="252" cy="143" r="4" fill="#fff" opacity="0.95">
+              <animate attributeName="r" values="4;4;4;0;4;4" keyTimes="0;0.6;0.92;0.95;0.97;1" dur="5s" repeatCount="indefinite"/>
+            </circle>
+            <path d="M 230 148 Q 250 142 270 148" stroke="#3d2314" stroke-width="3" fill="none" stroke-linecap="round" opacity="0">
+              <animate attributeName="opacity" values="0;0;0;1;0;0" keyTimes="0;0.6;0.92;0.95;0.97;1" dur="5s" repeatCount="indefinite"/>
+            </path>
+
+            <!-- Focinho -->
+            <ellipse cx="210" cy="192" rx="50" ry="36" fill="#ffe9b8" stroke="#e8c98a" stroke-width="3"/>
+            <!-- nariz -->
+            <ellipse cx="210" cy="178" rx="20" ry="16" fill="#4a3225"/>
+            <ellipse cx="203" cy="171" rx="6" ry="4" fill="#fff" opacity="0.9"/>
+            <!-- narinas -->
+            <ellipse cx="204" cy="180" rx="2" ry="3" fill="#2a1a12"/>
+            <ellipse cx="216" cy="180" rx="2" ry="3" fill="#2a1a12"/>
+            <!-- boca -->
+            <path d="M 196 204 Q 210 218 224 204" stroke="#4a3225" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 210 214 V 222" stroke="#4a3225" stroke-width="4" stroke-linecap="round"/>
+            <!-- língua -->
+            <path d="M 200 214 C 196 232 198 244 210 246 C 224 248 220 228 218 214 Z" fill="#ff7f8e" stroke="#e85466" stroke-width="2.5"/>
+
+            <!-- Bochechas coradas -->
+            <ellipse cx="138" cy="170" rx="14" ry="9" fill="#ff9aa2" opacity="0.45"/>
+            <ellipse cx="282" cy="170" rx="14" ry="9" fill="#ff9aa2" opacity="0.45"/>
+
+            <!-- Rabo abanando (atrás, à direita) -->
+            <g transform="rotate(0 312 300)">
+              <path d="M 300 296 C 360 326 388 280 382 214" stroke="url(#peloCao)" stroke-width="26" fill="none" stroke-linecap="round">
+                <animateTransform attributeName="transform" type="rotate" values="-10 304 286; 14 304 286; -10 304 286" dur="1.1s" repeatCount="indefinite"/>
+              </path>
+              <!-- ponta do rabo mais clara -->
+              <circle cx="382" cy="214" r="13" fill="#ffd9a0" stroke="#d9bf8a" stroke-width="2.5">
+                <animateTransform attributeName="transform" type="rotate" values="-10 304 286; 14 304 286; -10 304 286" dur="1.1s" repeatCount="indefinite"/>
+              </circle>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>🐶 Frete grátis acima de R$ 149</span>
+        <span>🐱 Primeiro banho com 20% de desconto</span>
+        <span>🦴 Tosa + banho em combo por menos</span>
+        <span>🐕 Consulta com hora marcada todos os dias</span>
+        <span>🐾 Desconto de 5% no pagamento no Pix</span>
+        <span>🐶 Frete grátis acima de R$ 149</span>
+        <span>🐱 Primeiro banho com 20% de desconto</span>
+        <span>🦴 Tosa + banho em combo por menos</span>
+        <span>🐕 Consulta com hora marcada todos os dias</span>
+        <span>🐾 Desconto de 5% no pagamento no Pix</span>
+      </div>
+    </div>
+
+    <section class="section features" id="diferenciais">
+      <span class="deco-paw deco-paw--tl" aria-hidden="true">🐾</span>
+      <div class="container">
+        <h2 class="section__title">Por que escolher a gente?</h2>
+        <p class="section__subtitle">Cuidamos do seu pet como se fosse da família.</p>
+        <div class="grid grid--4">
+          <article class="card card--feature" data-reveal>
+            <span class="card__icon" aria-hidden="true">🩺</span>
+            <h3>Veterinários experientes</h3>
+            <p>Equipe capacitada e atualizada para cuidar da saúde do seu pet.</p>
+          </article>
+          <article class="card card--feature" data-reveal>
+            <span class="card__icon" aria-hidden="true">🚿</span>
+            <h3>Banho e tosa completos</h3>
+            <p>Higiene e estética com produtos hipoalergênicos e estrutura climatizada.</p>
+          </article>
+          <article class="card card--feature" data-reveal>
+            <span class="card__icon" aria-hidden="true">🛍️</span>
+            <h3>Produtos selecionados</h3>
+            <p>Rações, brinquedos e acessórios das melhores marcas do mercado.</p>
+          </article>
+          <article class="card card--feature" data-reveal>
+            <span class="card__icon" aria-hidden="true">🤝</span>
+            <h3>Atendimento humano</h3>
+            <p>Transparência e atenção do primeiro contato até a entrega do seu pet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted services" id="servicos">
+      <span class="deco-paw deco-paw--bl" aria-hidden="true">🐾</span>
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Nossos serviços</h2>
+            <p class="section__subtitle">Soluções completas para o bem-estar do seu animal.</p>
+          </div>
+          <a href="servicos.html" class="btn btn--ghost">Ver todos</a>
+        </div>
+        <div class="grid grid--3">
+          <article class="card" data-reveal>
+            <span class="card__icon card__icon--lg" aria-hidden="true">🐕</span>
+            <h3>Banho & Tosa</h3>
+            <p>Banho completo, tosa higiênica e estética, secagem com soprador profissional e perfume.</p>
+            <a href="servicos.html#banho-tosa" class="card__link">Saiba mais →</a>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card__icon card__icon--lg" aria-hidden="true">💉</span>
+            <h3>Veterinária</h3>
+            <p>Consultas, vacinas, vermifugação e exames com profissionais dedicados.</p>
+            <a href="servicos.html#veterinaria" class="card__link">Saiba mais →</a>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card__icon card__icon--lg" aria-hidden="true">🏠</span>
+            <h3>Pet Sitter / Taxi Pet</h3>
+            <p>Visitas domiciliares, passeios monitorados e transporte com segurança total.</p>
+            <a href="servicos.html#taxi-pet" class="card__link">Saiba mais →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="produtos">
+      <span class="deco-paw deco-paw--tr" aria-hidden="true">🐾</span>
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Destaques da loja</h2>
+            <p class="section__subtitle">Os queridinhos dos nossos clientes.</p>
+          </div>
+          <a href="produtos.html" class="btn btn--ghost">Ver todos</a>
+        </div>
+        <div class="grid grid--3" id="productGrid">
+          <!-- produtos inseridos via JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted testimonials" id="depoimentos">
+      <span class="deco-paw deco-paw--br" aria-hidden="true">🐾</span>
+      <div class="container">
+        <h2 class="section__title">O que dizem nossos clientes</h2>
+        <p class="section__subtitle">Histórias reais de quem confia no nosso trabalho.</p>
+        <div class="testimonials__slider" id="slider">
+          <article class="card card--testimonial" data-reveal>
+            <div class="testimonial__stars" aria-label="5 estrelas">★★★★★</div>
+            <p>"Minha cachorra saiu lindíssima do banho e tosa. O atendimento é impecável, super atenciosos com ela!"</p>
+            <footer>
+              <span class="testimonial__avatar" aria-hidden="true">MB</span>
+              <div><strong>Mariana B.</strong><span>Tutora da Mel 🐶</span></div>
+            </footer>
+          </article>
+          <article class="card card--testimonial" data-reveal>
+            <div class="testimonial__stars" aria-label="5 estrelas">★★★★★</div>
+            <p>"Levei o meu gato para tomar vacina e fui super bem atendida. Explicaram tudo com muita paciência."</p>
+            <footer class="testimonial__footer">
+              <span class="testimonial__avatar" aria-hidden="true">CS</span>
+              <div><strong>Carlos S.</strong><span>Pai do Tobi 🐱</span></div>
+            </footer>
+          </article>
+          <article class="card card--testimonial" data-reveal>
+            <div class="testimonial__stars" aria-label="5 estrelas">★★★★★</div>
+            <p>"O serviço de pet sitter é maravilhoso. Viajei tranquila sabendo que a Nina estava em ótimas mãos."</p>
+            <footer class="testimonial__footer">
+              <span class="testimonial__avatar" aria-hidden="true">AJ</span>
+              <div><strong>Ana J.</strong><span>Mãe da Nina 🐕</span></div>
+            </footer>
+          </article>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__btn" id="prevSlide" aria-label="Depoimento anterior">←</button>
+          <button class="slider__btn" id="nextSlide" aria-label="Próximo depoimento">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <span class="deco-heart deco-heart--l" aria-hidden="true">🐾</span>
+      <span class="deco-heart deco-heart--r" aria-hidden="true">🦴</span>
+      <div class="container cta__inner">
+        <h2>Pronto para dar o melhor para o seu pet? 🐶</h2>
+        <p>Agende um horário e conheça o espaço mais querido dos pets da região.</p>
+        <a href="contato.html#agendamento" class="btn btn--light">Agendar agora</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--footer">
+          <span class="logo__icon" aria-hidden="true">🐾</span>
+          <span class="logo__text">Amigo<span>Fiel</span></span>
+        </a>
+        <p>Cuidando do seu melhor amigo com dedicação desde 2014.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <h3>Contato</h3>
+        <ul>
+          <li>📍 Rua das Flores, 123 – Centro</li>
+          <li>📞 (11) 99999-0000</li>
+          <li>✉️ ola@amigofiel.com.br</li>
+          <li>🕐 Seg a Sáb, 8h às 19h</li>
+        </ul>
+      </div>
+      <div class="footer__news">
+        <h3>Novidades</h3>
+        <p>Receba dicas e ofertas no seu e-mail.</p>
+        <form class="newsletter" id="newsletterForm" novalidate>
+          <label class="sr-only" for="newsEmail">Seu e-mail</label>
+          <input type="email" id="newsEmail" name="email" placeholder="Digite seu e-mail" required>
+          <button type="submit" class="btn btn--primary">Assinar</button>
+        </form>
+        <p class="form__msg" id="newsMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Pet Shop Amigo Fiel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Quero%20agendar%20um%20atendimento%20no%20Amigo%20Fiel" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <span aria-hidden="true">💬</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
