@@ -1,0 +1,132 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Pet Shop Amigo Fiel - Página inicial" [ref=f1e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=f1e5]: 🐾
+        - generic [ref=f1e6]: AmigoFiel
+      - navigation "Navegação principal" [ref=f1e7]:
+        - list [ref=f1e8]:
+          - listitem [ref=f1e9]:
+            - link "Início" [ref=f1e10] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f1e11]:
+            - link "Serviços" [ref=f1e12] [cursor=pointer]:
+              - /url: servicos.html
+          - listitem [ref=f1e13]:
+            - link "Produtos" [ref=f1e14] [cursor=pointer]:
+              - /url: produtos.html
+          - listitem [ref=f1e15]:
+            - link "Sobre nós" [ref=f1e16] [cursor=pointer]:
+              - /url: sobre.html
+          - listitem [ref=f1e17]:
+            - link "Contato" [ref=f1e18] [cursor=pointer]:
+              - /url: contato.html
+        - link "Agendar horário" [ref=f1e19] [cursor=pointer]:
+          - /url: contato.html#agendamento
+  - main [ref=f1e20]:
+    - generic [ref=f1e22]:
+      - heading [level=1] [ref=f1e23]:
+        - text: Nossos
+        - emphasis [ref=f1e24]: Serviços
+      - paragraph [ref=f1e25]: Tudo o que o seu pet precisa, em um só lugar.
+    - generic [ref=f1e28]:
+      - article [ref=f1e29]:
+        - generic [ref=f1e30]: 🛁
+        - generic [ref=f1e31]:
+          - heading "Banho & Tosa" [level=2] [ref=f1e32]
+          - paragraph [ref=f1e33]: Banho completo com produtos hipoalergênicos, tosa higiênica ou estética de acordo com a raça, limpeza de ouvidos, corte de unhas e perfume delicioso.
+          - list [ref=f1e34]:
+            - listitem [ref=f1e35]: ✓ Banho simples – a partir de R$ 49
+            - listitem [ref=f1e36]: ✓ Banho + tosa higiênica – a partir de R$ 69
+            - listitem [ref=f1e37]: ✓ Banho + tosa estética – a partir de R$ 89
+            - listitem [ref=f1e38]: ✓ Hidratação e desembolo – sob consulta
+        - link "Agendar" [ref=f1e39] [cursor=pointer]:
+          - /url: contato.html#agendamento
+      - article [ref=f1e40]:
+        - generic [ref=f1e41]: 🩺
+        - generic [ref=f1e42]:
+          - heading "Veterinária" [level=2] [ref=f1e43]
+          - paragraph [ref=f1e44]: Consultas clínicas, vacinação completa, vermifugação, exames laboratoriais e acompanhamento preventivo para cães e gatos.
+          - list [ref=f1e45]:
+            - listitem [ref=f1e46]: ✓ Consulta veterinária – R$ 120
+            - listitem [ref=f1e47]: ✓ Vacina V10 / V4 – R$ 90
+            - listitem [ref=f1e48]: ✓ Vacina antirrábica – R$ 60
+            - listitem [ref=f1e49]: ✓ Aplicação de medicamentos – R$ 35
+        - link "Agendar" [ref=f1e50] [cursor=pointer]:
+          - /url: contato.html#agendamento
+      - article [ref=f1e51]:
+        - generic [ref=f1e52]: 🚙
+        - generic [ref=f1e53]:
+          - heading "Pet Sitter & Taxi Pet" [level=2] [ref=f1e54]
+          - paragraph [ref=f1e55]: Seu pet buscado e levado em segurança, ou cuidado na sua casa enquanto você viaja ou trabalha. Visitas monitoradas com fotos e relatórios.
+          - list [ref=f1e56]:
+            - listitem [ref=f1e57]: ✓ Taxi pet (por trajeto) – R$ 35
+            - listitem [ref=f1e58]: ✓ Visita domiciliar – R$ 60
+            - listitem [ref=f1e59]: ✓ Passeio monitorado – R$ 45
+            - listitem [ref=f1e60]: ✓ Hospedagem em casa – sob consulta
+        - link "Agendar" [ref=f1e61] [cursor=pointer]:
+          - /url: contato.html#agendamento
+      - article [ref=f1e62]:
+        - generic [ref=f1e63]: 🍖
+        - generic [ref=f1e64]:
+          - heading "Rações & Nutrição" [level=2] [ref=f1e65]
+          - paragraph [ref=f1e66]: Vendemos as melhores rações e alimentos naturais, com orientação nutricional gratuita para escolher a dieta ideal para o seu pet.
+          - list [ref=f1e67]:
+            - listitem [ref=f1e68]: ✓ Orientação nutricional – grátis
+            - listitem [ref=f1e69]: ✓ Rações premium – consulte preços
+            - listitem [ref=f1e70]: ✓ Petiscos naturais – a partir de R$ 15
+        - link "Ver produtos" [ref=f1e71] [cursor=pointer]:
+          - /url: produtos.html
+  - contentinfo [ref=f1e72]:
+    - generic [ref=f1e73]:
+      - generic [ref=f1e74]:
+        - link "AmigoFiel" [ref=f1e75] [cursor=pointer]:
+          - /url: index.html
+          - generic [ref=f1e76]: 🐾
+        - paragraph [ref=f1e78]: Cuidando do seu melhor amigo com dedicação desde 2014.
+        - generic [ref=f1e79]:
+          - link "Instagram" [ref=f1e80] [cursor=pointer]:
+            - /url: "#"
+            - text: IG
+          - link "Facebook" [ref=f1e81] [cursor=pointer]:
+            - /url: "#"
+            - text: FB
+          - link "WhatsApp" [ref=f1e82] [cursor=pointer]:
+            - /url: "#"
+            - text: WA
+      - navigation "Links do rodapé" [ref=f1e83]:
+        - heading "Navegação" [level=3] [ref=f1e84]
+        - list [ref=f1e85]:
+          - listitem [ref=f1e86]:
+            - link "Início" [ref=f1e87] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f1e88]:
+            - link "Serviços" [ref=f1e89] [cursor=pointer]:
+              - /url: servicos.html
+          - listitem [ref=f1e90]:
+            - link "Produtos" [ref=f1e91] [cursor=pointer]:
+              - /url: produtos.html
+          - listitem [ref=f1e92]:
+            - link "Sobre nós" [ref=f1e93] [cursor=pointer]:
+              - /url: sobre.html
+          - listitem [ref=f1e94]:
+            - link "Contato" [ref=f1e95] [cursor=pointer]:
+              - /url: contato.html
+      - generic [ref=f1e96]:
+        - heading "Contato" [level=3] [ref=f1e97]
+        - list [ref=f1e98]:
+          - listitem [ref=f1e99]: 📍 Rua das Flores, 123 – Centro
+          - listitem [ref=f1e100]: 📞 (11) 99999-0000
+          - listitem [ref=f1e101]: ✉️ ola@amigofiel.com.br
+          - listitem [ref=f1e102]: 🕐 Seg a Sáb, 8h às 19h
+      - generic [ref=f1e103]:
+        - heading "Novidades" [level=3] [ref=f1e104]
+        - paragraph [ref=f1e105]: Receba dicas e ofertas no seu e-mail.
+        - generic [ref=f1e106]:
+          - generic [ref=f1e107]: Seu e-mail
+          - textbox "Seu e-mail" [ref=f1e108]:
+            - /placeholder: Digite seu e-mail
+          - button "Assinar" [ref=f1e109] [cursor=pointer]
+        - status [ref=f1e110]
+    - paragraph [ref=f1e112]: © 2026 Pet Shop Amigo Fiel. Todos os direitos reservados.
