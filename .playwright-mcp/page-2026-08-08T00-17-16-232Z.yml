@@ -1,0 +1,213 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Pet Shop Amigo Fiel - Página inicial" [ref=f1e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=f1e5]: 🐾
+        - generic [ref=f1e6]: AmigoFiel
+      - navigation "Navegação principal" [ref=f1e7]:
+        - list [ref=f1e8]:
+          - listitem [ref=f1e9]:
+            - link "Início" [ref=f1e10] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f1e11]:
+            - link "Serviços" [ref=f1e12] [cursor=pointer]:
+              - /url: servicos.html
+          - listitem [ref=f1e13]:
+            - link "Produtos" [ref=f1e14] [cursor=pointer]:
+              - /url: produtos.html
+          - listitem [ref=f1e15]:
+            - link "Sobre nós" [ref=f1e16] [cursor=pointer]:
+              - /url: sobre.html
+          - listitem [ref=f1e17]:
+            - link "Contato" [ref=f1e18] [cursor=pointer]:
+              - /url: contato.html
+        - link "Agendar horário" [ref=f1e19] [cursor=pointer]:
+          - /url: contato.html#agendamento
+  - main [ref=f1e20]:
+    - generic [ref=f1e22]:
+      - generic [ref=f1e23]:
+        - generic [ref=f1e24]: 🐶 Bem-vindo ao Amigo Fiel
+        - heading [level=1] [ref=f1e25]:
+          - text: Amor e cuidado para o seu
+          - emphasis [ref=f1e26]: melhor amigo
+        - paragraph [ref=f1e27]: Há mais de 10 anos cuidando de cães e gatos com carinho, profissionalismo e os melhores produtos do mercado.
+        - generic [ref=f1e28]:
+          - link "Conhecer serviços" [ref=f1e29] [cursor=pointer]:
+            - /url: servicos.html
+          - link "Fale conosco" [ref=f1e30] [cursor=pointer]:
+            - /url: contato.html
+        - list [ref=f1e31]:
+          - listitem [ref=f1e32]:
+            - strong [ref=f1e33]: 10+
+            - generic [ref=f1e34]: anos de experiência
+          - listitem [ref=f1e35]:
+            - strong [ref=f1e36]: 8k+
+            - generic [ref=f1e37]: pets atendidos
+          - listitem [ref=f1e38]:
+            - strong [ref=f1e39]: 4.9★
+            - generic [ref=f1e40]: avaliação média
+      - img "Ilustração de cachorro feliz" [ref=f1e41]
+    - generic [ref=f1e66]:
+      - heading "Por que escolher a gente?" [level=2] [ref=f1e67]
+      - paragraph [ref=f1e68]: Cuidamos do seu pet como se fosse da família.
+      - generic [ref=f1e69]:
+        - article [ref=f1e70]:
+          - generic [ref=f1e71]: 🩺
+          - heading "Veterinários experientes" [level=3] [ref=f1e72]
+          - paragraph [ref=f1e73]: Equipe capacitada e atualizada para cuidar da saúde do seu pet.
+        - article [ref=f1e74]:
+          - generic [ref=f1e75]: 🚿
+          - heading "Banho e tosa completos" [level=3] [ref=f1e76]
+          - paragraph [ref=f1e77]: Higiene e estética com produtos hipoalergênicos e estrutura climatizada.
+        - article [ref=f1e78]:
+          - generic [ref=f1e79]: 🛍️
+          - heading "Produtos selecionados" [level=3] [ref=f1e80]
+          - paragraph [ref=f1e81]: Rações, brinquedos e acessórios das melhores marcas do mercado.
+        - article [ref=f1e82]:
+          - generic [ref=f1e83]: 🤝
+          - heading "Atendimento humano" [level=3] [ref=f1e84]
+          - paragraph [ref=f1e85]: Transparência e atenção do primeiro contato até a entrega do seu pet.
+    - generic [ref=f1e87]:
+      - generic [ref=f1e88]:
+        - generic [ref=f1e89]:
+          - heading "Nossos serviços" [level=2] [ref=f1e90]
+          - paragraph [ref=f1e91]: Soluções completas para o bem-estar do seu animal.
+        - link "Ver todos" [ref=f1e92] [cursor=pointer]:
+          - /url: servicos.html
+      - generic [ref=f1e93]:
+        - article [ref=f1e94]:
+          - generic [ref=f1e95]: 🐕
+          - heading "Banho & Tosa" [level=3] [ref=f1e96]
+          - paragraph [ref=f1e97]: Banho completo, tosa higiênica e estética, secagem com soprador profissional e perfume.
+          - link "Saiba mais →" [ref=f1e98] [cursor=pointer]:
+            - /url: servicos.html#banho-tosa
+        - article [ref=f1e99]:
+          - generic [ref=f1e100]: 💉
+          - heading "Veterinária" [level=3] [ref=f1e101]
+          - paragraph [ref=f1e102]: Consultas, vacinas, vermifugação e exames com profissionais dedicados.
+          - link "Saiba mais →" [ref=f1e103] [cursor=pointer]:
+            - /url: servicos.html#veterinaria
+        - article [ref=f1e104]:
+          - generic [ref=f1e105]: 🏠
+          - heading "Pet Sitter / Taxi Pet" [level=3] [ref=f1e106]
+          - paragraph [ref=f1e107]: Visitas domiciliares, passeios monitorados e transporte com segurança total.
+          - link "Saiba mais →" [ref=f1e108] [cursor=pointer]:
+            - /url: servicos.html#taxi-pet
+    - generic [ref=f1e110]:
+      - generic [ref=f1e111]:
+        - generic [ref=f1e112]:
+          - heading "Destaques da loja" [level=2] [ref=f1e113]
+          - paragraph [ref=f1e114]: Os queridinhos dos nossos clientes.
+        - link "Ver todos" [ref=f1e115] [cursor=pointer]:
+          - /url: produtos.html
+      - generic [ref=f1e116]:
+        - article [ref=f1e117]:
+          - generic [ref=f1e118]: 🍖
+          - generic [ref=f1e119]:
+            - generic [ref=f1e120]: racao
+            - heading "Ração Premium Cães Adultos 15kg" [level=3] [ref=f1e121]
+            - paragraph [ref=f1e122]: Proteína de alta qualidade para cães adultos.
+            - generic [ref=f1e123]: R$ 219,90 R$ 189,90
+        - article [ref=f1e124]:
+          - generic [ref=f1e125]: 🐟
+          - generic [ref=f1e126]:
+            - generic [ref=f1e127]: racao
+            - heading "Ração Gatos Filhotes 10kg" [level=3] [ref=f1e128]
+            - paragraph [ref=f1e129]: Nutrição completa e saborosa para filhotes.
+            - generic [ref=f1e130]: R$ 159,90
+        - article [ref=f1e131]:
+          - generic [ref=f1e132]: ⚽
+          - generic [ref=f1e133]:
+            - generic [ref=f1e134]: brinquedos
+            - heading "Bola de borracha resistente" [level=3] [ref=f1e135]
+            - paragraph [ref=f1e136]: Ideal para cães que adoram morder e brincar.
+            - generic [ref=f1e137]: R$ 34,90 R$ 24,90
+    - generic [ref=f1e139]:
+      - heading "O que dizem nossos clientes" [level=2] [ref=f1e140]
+      - paragraph [ref=f1e141]: Histórias reais de quem confia no nosso trabalho.
+      - generic [ref=f1e142]:
+        - article [ref=f1e143]:
+          - generic "5 estrelas" [ref=f1e144]: ★★★★★
+          - paragraph [ref=f1e145]: "\"Minha cachorra saiu lindíssima do banho e tosa. O atendimento é impecável, super atenciosos com ela!\""
+          - generic [ref=f1e146]:
+            - generic [ref=f1e147]: MB
+            - generic [ref=f1e148]:
+              - strong [ref=f1e149]: Mariana B.
+              - generic [ref=f1e150]: Tutora da Mel 🐶
+        - article [ref=f1e151]:
+          - generic "5 estrelas" [ref=f1e152]: ★★★★★
+          - paragraph [ref=f1e153]: "\"Levei o meu gato para tomar vacina e fui super bem atendida. Explicaram tudo com muita paciência.\""
+          - generic [ref=f1e154]:
+            - generic [ref=f1e155]: CS
+            - generic [ref=f1e156]:
+              - strong [ref=f1e157]: Carlos S.
+              - generic [ref=f1e158]: Pai do Tobi 🐱
+        - article [ref=f1e159]:
+          - generic "5 estrelas" [ref=f1e160]: ★★★★★
+          - paragraph [ref=f1e161]: "\"O serviço de pet sitter é maravilloso. Viajei tranquila sabendo que a Nina estava em ótimas mãos.\""
+          - generic [ref=f1e162]:
+            - generic [ref=f1e163]: AJ
+            - generic [ref=f1e164]:
+              - strong [ref=f1e165]: Ana J.
+              - generic [ref=f1e166]: Mãe da Nina 🐕
+      - generic [ref=f1e167]:
+        - button "Depoimento anterior" [ref=f1e168] [cursor=pointer]: ←
+        - button "Próximo depoimento" [ref=f1e169] [cursor=pointer]: →
+    - generic [ref=f1e171]:
+      - heading "Pronto para dar o melhor para o seu pet?" [level=2] [ref=f1e172]
+      - paragraph [ref=f1e173]: Agende um horário e conheça o espaço mais querido dos pets da região.
+      - link "Agendar agora" [ref=f1e174] [cursor=pointer]:
+        - /url: contato.html#agendamento
+  - contentinfo [ref=f1e175]:
+    - generic [ref=f1e176]:
+      - generic [ref=f1e177]:
+        - link "AmigoFiel" [ref=f1e178] [cursor=pointer]:
+          - /url: index.html
+          - generic [ref=f1e179]: 🐾
+        - paragraph [ref=f1e181]: Cuidando do seu melhor amigo com dedicação desde 2014.
+        - generic [ref=f1e182]:
+          - link "Instagram" [ref=f1e183] [cursor=pointer]:
+            - /url: "#"
+            - text: IG
+          - link "Facebook" [ref=f1e184] [cursor=pointer]:
+            - /url: "#"
+            - text: FB
+          - link "WhatsApp" [ref=f1e185] [cursor=pointer]:
+            - /url: "#"
+            - text: WA
+      - navigation "Links do rodapé" [ref=f1e186]:
+        - heading "Navegação" [level=3] [ref=f1e187]
+        - list [ref=f1e188]:
+          - listitem [ref=f1e189]:
+            - link "Início" [ref=f1e190] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f1e191]:
+            - link "Serviços" [ref=f1e192] [cursor=pointer]:
+              - /url: servicos.html
+          - listitem [ref=f1e193]:
+            - link "Produtos" [ref=f1e194] [cursor=pointer]:
+              - /url: produtos.html
+          - listitem [ref=f1e195]:
+            - link "Sobre nós" [ref=f1e196] [cursor=pointer]:
+              - /url: sobre.html
+          - listitem [ref=f1e197]:
+            - link "Contato" [ref=f1e198] [cursor=pointer]:
+              - /url: contato.html
+      - generic [ref=f1e199]:
+        - heading "Contato" [level=3] [ref=f1e200]
+        - list [ref=f1e201]:
+          - listitem [ref=f1e202]: 📍 Rua das Flores, 123 – Centro
+          - listitem [ref=f1e203]: 📞 (11) 99999-0000
+          - listitem [ref=f1e204]: ✉️ ola@amigofiel.com.br
+          - listitem [ref=f1e205]: 🕐 Seg a Sáb, 8h às 19h
+      - generic [ref=f1e206]:
+        - heading "Novidades" [level=3] [ref=f1e207]
+        - paragraph [ref=f1e208]: Receba dicas e ofertas no seu e-mail.
+        - generic [ref=f1e209]:
+          - generic [ref=f1e210]: Seu e-mail
+          - textbox "Seu e-mail" [ref=f1e211]:
+            - /placeholder: Digite seu e-mail
+          - button "Assinar" [ref=f1e212] [cursor=pointer]
+        - status [ref=f1e213]
+    - paragraph [ref=f1e215]: © 2026 Pet Shop Amigo Fiel. Todos os direitos reservados.
