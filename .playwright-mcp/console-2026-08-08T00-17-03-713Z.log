@@ -1,0 +1,7 @@
+[    3996ms] ReferenceError: formatBRL is not defined
+    at createProductCard (http://localhost:8000/js/main.js:105:21)
+    at http://localhost:8000/js/main.js:129:29
+    at Array.forEach (<anonymous>)
+    at renderProducts (http://localhost:8000/js/main.js:128:10)
+    at http://localhost:8000/js/main.js:153:5
+    at http://localhost:8000/js/main.js:280:3
