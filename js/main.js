@@ -97,14 +97,14 @@
     navToggle.addEventListener('click', function () {
       var open = nav.classList.toggle('is-open');
       navToggle.setAttribute('aria-expanded', String(open));
-      navToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+      navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     });
 
     $all('.nav__link', nav).forEach(function (link) {
       link.addEventListener('click', function () {
         nav.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
-        navToggle.setAttribute('aria-label', 'Abrir menu');
+        navToggle.setAttribute('aria-label', 'Open menu');
       });
     });
 
@@ -112,7 +112,7 @@
       if (e.key === 'Escape' && nav.classList.contains('is-open')) {
         nav.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
-        navToggle.setAttribute('aria-label', 'Abrir menu');
+        navToggle.setAttribute('aria-label', 'Open menu');
         navToggle.focus();
       }
     });
@@ -128,16 +128,16 @@
 
   /* ---------- Catálogo de produtos ---------- */
   var PRODUCTS = [
-    { nome: 'Ração Premium Cães Adultos 15kg', categoria: 'racao', emoji: '🍖', preco: 189.90, precoAntigo: 219.90, descricao: 'Proteína de alta qualidade para cães adultos.' },
-    { nome: 'Ração Gatos Filhotes 10kg', categoria: 'racao', emoji: '🐟', preco: 159.90, precoAntigo: null, descricao: 'Nutrição completa e saborosa para filhotes.' },
-    { nome: 'Bola de borracha resistente', categoria: 'brinquedos', emoji: '⚽', preco: 24.90, precoAntigo: 34.90, descricao: 'Ideal para cães que adoram morder e brincar.' },
-    { nome: 'Brinquedo de pelúcia "Osso"', categoria: 'brinquedos', emoji: '🧸', preco: 29.90, precoAntigo: null, descricao: 'Fofinho, lavável e com guizo interno.' },
-    { nome: 'Ratos de brinquedo com catnip', categoria: 'brinquedos', emoji: '🐭', preco: 14.90, precoAntigo: null, descricao: 'Rico em catnip, perfeito para gatos.' },
-    { nome: 'Coleira anti-puxão ajustável', categoria: 'acessorios', emoji: '🪢', preco: 49.90, precoAntigo: 59.90, descricao: 'Confortável, resistente e com fecho de segurança.' },
-    { nome: 'Prato de alimentação lento', categoria: 'acessorios', emoji: '🍽️', preco: 39.90, precoAntigo: null, descricao: 'Reduz a ansiedade e melhora a digestão.' },
-    { nome: 'Shampoo hipoalergênico 500ml', categoria: 'higiene', emoji: '🧴', preco: 34.90, precoAntigo: 42.90, descricao: 'Suave para peles sensíveis, com cheiro de amêndoas.' },
-    { nome: 'Escova de dentes + pasta sabor carne', categoria: 'higiene', emoji: '🦷', preco: 19.90, precoAntigo: null, descricao: 'Kit de higiene dental para cães e gatos.' },
-    { nome: 'Lenço umedecido para pets 80un', categoria: 'higiene', emoji: '🧻', preco: 22.90, precoAntigo: null, descricao: 'Limpeza rápida entre os banhos.' }
+    { nome: 'Premium Dog Food Adult 15kg', categoria: 'racao', emoji: '🍖', preco: 189.90, precoAntigo: 219.90, descricao: 'High-quality protein for adult dogs.' },
+    { nome: 'Kitten Food 10kg', categoria: 'racao', emoji: '🐟', preco: 159.90, precoAntigo: null, descricao: 'Complete and tasty nutrition for kittens.' },
+    { nome: 'Durable rubber ball', categoria: 'brinquedos', emoji: '⚽', preco: 24.90, precoAntigo: 34.90, descricao: 'Ideal for dogs that love to chew and play.' },
+    { nome: 'Plush "Bone" toy', categoria: 'brinquedos', emoji: '🧸', preco: 29.90, precoAntigo: null, descricao: 'Soft, washable and with an internal squeaker.' },
+    { nome: 'Catnip toy mice', categoria: 'brinquedos', emoji: '🐭', preco: 14.90, precoAntigo: null, descricao: 'Rich in catnip, perfect for cats.' },
+    { nome: 'Adjustable no-pull leash', categoria: 'acessorios', emoji: '🪢', preco: 49.90, precoAntigo: 59.90, descricao: 'Comfortable, durable and with a safety clasp.' },
+    { nome: 'Slow feeder bowl', categoria: 'acessorios', emoji: '🍽️', preco: 39.90, precoAntigo: null, descricao: 'Reduces anxiety and improves digestion.' },
+    { nome: 'Hypoallergenic shampoo 500ml', categoria: 'higiene', emoji: '🧴', preco: 34.90, precoAntigo: 42.90, descricao: 'Gentle for sensitive skin, with an almond scent.' },
+    { nome: 'Toothbrush + meat-flavored toothpaste', categoria: 'higiene', emoji: '🦷', preco: 19.90, precoAntigo: null, descricao: 'Dental hygiene kit for dogs and cats.' },
+    { nome: 'Pet wipes 80ct', categoria: 'higiene', emoji: '🧻', preco: 22.90, precoAntigo: null, descricao: 'Quick clean-up between baths.' }
   ];
 
   function formatPrice(value) {
@@ -184,20 +184,20 @@
 
     var stock = document.createElement('span');
     stock.className = 'product-card__stock';
-    stock.innerHTML = '<i aria-hidden="true"></i> Em estoque';
+    stock.innerHTML = '<i aria-hidden="true"></i> In stock';
 
     var price = document.createElement('div');
     price.className = 'product-card__price';
     if (desconto) {
       var oldPrice = document.createElement('span');
       oldPrice.className = 'product-card__old';
-      oldPrice.textContent = 'de ' + formatPrice(produto.precoAntigo);
+      oldPrice.textContent = 'was ' + formatPrice(produto.precoAntigo);
       var newPrice = document.createElement('span');
       newPrice.className = 'product-card__current';
-      newPrice.textContent = 'por ' + formatPrice(produto.preco);
+      newPrice.textContent = 'now ' + formatPrice(produto.preco);
       var installment = document.createElement('span');
       installment.className = 'product-card__installment';
-      installment.textContent = 'ou 3x de ' + formatPrice(produto.preco / 3) + ' sem juros';
+      installment.textContent = 'or 3x of ' + formatPrice(produto.preco / 3) + ' no interest';
       price.appendChild(oldPrice);
       price.appendChild(newPrice);
       price.appendChild(installment);
@@ -207,7 +207,7 @@
       onlyPrice.textContent = formatPrice(produto.preco).replace('R$', 'R$ ');
       var plainInstallment = document.createElement('span');
       plainInstallment.className = 'product-card__installment';
-      plainInstallment.textContent = 'ou 3x de ' + formatPrice(produto.preco / 3) + ' sem juros';
+      plainInstallment.textContent = 'or 3x of ' + formatPrice(produto.preco / 3) + ' no interest';
       price.appendChild(onlyPrice);
       price.appendChild(plainInstallment);
     }
@@ -234,7 +234,7 @@
 
     var count = $('#productCount');
     if (count) {
-      count.textContent = list.length === 1 ? '1 produto' : list.length + ' produtos';
+      count.textContent = list.length === 1 ? '1 product' : list.length + ' products';
     }
   }
 
@@ -312,14 +312,14 @@
     function validateField(input) {
       var name = input.name;
       if (name === 'nome') {
-        setError(input, input.value.trim().length >= 3 ? '' : 'Informe seu nome (mínimo 3 caracteres).');
+        setError(input, input.value.trim().length >= 3 ? '' : 'Enter your name (at least 3 characters).');
       } else if (name === 'telefone') {
         var digits = input.value.replace(/\D/g, '');
-        setError(input, digits.length >= 8 ? '' : 'Informe um telefone válido.');
+        setError(input, digits.length >= 8 ? '' : 'Enter a valid phone number.');
       } else if (name === 'email') {
-        setError(input, input.value === '' || isValidEmail(input.value) ? '' : 'Informe um e-mail válido.');
+        setError(input, input.value === '' || isValidEmail(input.value) ? '' : 'Enter a valid email address.');
       } else if (name === 'mensagem') {
-        setError(input, input.value.trim().length >= 5 ? '' : 'Escreva uma mensagem com pelo menos 5 caracteres.');
+        setError(input, input.value.trim().length >= 5 ? '' : 'Write a message with at least 5 characters.');
       }
     }
 
@@ -343,7 +343,7 @@
 
       if (!valid) {
         if (contactMsg) {
-          contactMsg.textContent = 'Por favor, corrija os campos destacados.';
+          contactMsg.textContent = 'Please fix the highlighted fields.';
           contactMsg.className = 'form__msg is-error';
         }
         return;
@@ -351,7 +351,7 @@
 
       contactForm.reset();
       if (contactMsg) {
-        contactMsg.textContent = 'Mensagem enviada com sucesso! Retornaremos em breve.';
+        contactMsg.textContent = 'Message sent successfully! We will get back to you soon.';
         contactMsg.className = 'form__msg is-success';
       }
     });
@@ -368,14 +368,14 @@
       var value = newsEmail.value.trim();
       if (!isValidEmail(value)) {
         if (newsMsg) {
-          newsMsg.textContent = 'Informe um e-mail válido para assinar.';
+          newsMsg.textContent = 'Enter a valid email to subscribe.';
           newsMsg.className = 'form__msg is-error';
         }
         return;
       }
       newsletterForm.reset();
       if (newsMsg) {
-        newsMsg.textContent = 'Inscrição feita! Obrigado por assinar.';
+        newsMsg.textContent = 'Subscription successful! Thanks for subscribing.';
         newsMsg.className = 'form__msg is-success';
       }
     });
