@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fale com o Pet Shop Amigo Fiel: telefone, WhatsApp, endereço e horários.">
-  <title>Contato | Pet Shop Amigo Fiel</title>
+  <meta name="description" content="Contact Amigo Fiel Pet Shop: phone, WhatsApp, address and opening hours.">
+  <title>Contact | Amigo Fiel Pet Shop</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,25 +25,25 @@
 
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="index.html" class="logo" aria-label="Pet Shop Amigo Fiel - Página inicial">
+      <a href="index.html" class="logo" aria-label="Amigo Fiel Pet Shop - Home page">
         <span class="logo__icon" aria-hidden="true">🐾</span>
         <span class="logo__text">Amigo<span>Fiel</span></span>
       </a>
-      <nav class="nav" id="nav" aria-label="Navegação principal">
+      <nav class="nav" id="nav" aria-label="Main navigation">
         <ul class="nav__list">
-          <li><a href="index.html" class="nav__link">Início</a></li>
-          <li><a href="servicos.html" class="nav__link">Serviços</a></li>
-          <li><a href="produtos.html" class="nav__link">Produtos</a></li>
-          <li><a href="sobre.html" class="nav__link">Sobre nós</a></li>
-          <li><a href="contato.html" class="nav__link is-active" aria-current="page">Contato</a></li>
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="servicos.html" class="nav__link">Services</a></li>
+          <li><a href="produtos.html" class="nav__link">Products</a></li>
+          <li><a href="sobre.html" class="nav__link">About us</a></li>
+          <li><a href="contato.html" class="nav__link is-active" aria-current="page">Contact</a></li>
         </ul>
-        <a href="contato.html#agendamento" class="btn btn--primary nav__cta">Agendar horário</a>
+        <a href="contato.html#agendamento" class="btn btn--primary nav__cta">Book an appointment</a>
       </nav>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro e escuro">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme">
         <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
         <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
       </button>
-      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -53,33 +53,33 @@
     <section class="page-hero">
       <span class="deco-paw deco-paw--tr" aria-hidden="true">🐾</span>
       <div class="container">
-        <h1>Fale <em>Conosco</em></h1>
-        <p>Tire dúvidas ou agende o próximo atendimento do seu pet.</p>
+        <h1>Contact <em>Us</em></h1>
+        <p>Ask questions or book your pet's next appointment.</p>
       </div>
     </section>
     <section class="section" id="agendamento">
       <div class="container contact__grid">
         <div class="contact__info" data-reveal>
-          <h2>Informações de contato</h2>
+          <h2>Contact information</h2>
           <ul class="contact__list">
             <li>
               <span aria-hidden="true">📍</span>
-              <div><strong>Endereço</strong> Rua das Flores, 123 – Centro</div>
+              <div><strong>Address</strong> Rua das Flores, 123 – Centro</div>
             </li>
             <li>
               <span aria-hidden="true">📞</span>
-              <div><strong>Telefone</strong> (11) 99999-0000</div>
+              <div><strong>Phone</strong> (11) 99999-0000</div>
             </li>
             <li>
               <span aria-hidden="true">✉️</span>
-              <div><strong>E-mail</strong> ola@amigofiel.com.br</div>
+              <div><strong>Email</strong> ola@amigofiel.com.br</div>
             </li>
             <li>
               <span aria-hidden="true">🕐</span>
-              <div><strong>Horário</strong> Seg a Sáb, 8h às 19h</div>
+              <div><strong>Hours</strong> Mon to Sat, 8am to 7pm</div>
             </li>
           </ul>
-          <div class="map-box" role="img" aria-label="Mapa ilustrativo do endereço Rua das Flores, 123 – Centro">
+          <div class="map-box" role="img" aria-label="Illustrative map of the address Rua das Flores, 123 – Centro">
             <div>
               <p class="map-box__pin" aria-hidden="true">📍</p>
               <p>Rua das Flores, 123 – Centro</p>
@@ -88,42 +88,42 @@
         </div>
 
         <form class="contact__form" id="contactForm" novalidate data-reveal>
-          <h2>Agende seu atendimento</h2>
+          <h2>Book your appointment</h2>
           <div class="form__row">
             <div>
-              <label for="contactName">Seu nome</label>
+              <label for="contactName">Your name</label>
               <input type="text" id="contactName" name="nome" placeholder="Maria da Silva" required>
               <span class="form__error" data-for="contactName"></span>
             </div>
             <div>
-              <label for="contactEmail">Seu e-mail</label>
+              <label for="contactEmail">Your email</label>
               <input type="email" id="contactEmail" name="email" placeholder="maria@email.com" required>
               <span class="form__error" data-for="contactEmail"></span>
             </div>
           </div>
           <div class="form__row">
             <div>
-              <label for="contactPhone">Telefone</label>
+              <label for="contactPhone">Phone</label>
               <input type="tel" id="contactPhone" name="telefone" placeholder="(11) 99999-0000" required>
               <span class="form__error" data-for="contactPhone"></span>
             </div>
             <div>
-              <label for="contactService">Serviço desejado</label>
+              <label for="contactService">Desired service</label>
               <select id="contactService" name="servico" required>
-                <option value="">Escolha...</option>
-                <option value="banho">Banho e Tosa</option>
-                <option value="veterinaria">Veterinária</option>
+                <option value="">Choose...</option>
+                <option value="banho">Bath and Grooming</option>
+                <option value="veterinaria">Veterinary</option>
                 <option value="sitter">Pet Sitter</option>
-                <option value="taxi">Taxi Pet</option>
+                <option value="taxi">Pet Taxi</option>
               </select>
             </div>
           </div>
             <div>
-              <label for="contactMessage">Mensagem</label>
-              <textarea id="contactMessage" name="mensagem" placeholder="Conte para a gente como podemos ajudar o seu pet." required></textarea>
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="mensagem" placeholder="Tell us how we can help your pet." required></textarea>
               <span class="form__error" data-for="contactMessage"></span>
             </div>
-          <button type="submit" class="btn btn--primary btn--block">Enviar mensagem</button>
+          <button type="submit" class="btn btn--primary btn--block">Send message</button>
           <p class="form__msg" id="contactMsg" role="status"></p>
         </form>
       </div>
@@ -137,49 +137,49 @@
           <span class="logo__icon" aria-hidden="true">🐾</span>
           <span class="logo__text">Amigo<span>Fiel</span></span>
         </a>
-        <p>Cuidando do seu melhor amigo com dedicação desde 2014.</p>
+        <p>Caring for your best friend with dedication since 2014.</p>
         <div class="footer__social">
           <a href="#" aria-label="Instagram">IG</a>
           <a href="#" aria-label="Facebook">FB</a>
           <a href="#" aria-label="WhatsApp">WA</a>
         </div>
       </div>
-      <nav class="footer__nav" aria-label="Links do rodapé">
-        <h3>Navegação</h3>
+      <nav class="footer__nav" aria-label="Footer links">
+        <h3>Navigation</h3>
         <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="sobre.html">Sobre nós</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servicos.html">Services</a></li>
+          <li><a href="produtos.html">Products</a></li>
+          <li><a href="sobre.html">About us</a></li>
+          <li><a href="contato.html">Contact</a></li>
         </ul>
       </nav>
       <div class="footer__contact">
-        <h3>Contato</h3>
+        <h3>Contact</h3>
         <ul>
           <li>📍 Rua das Flores, 123 – Centro</li>
           <li>📞 (11) 99999-0000</li>
           <li>✉️ ola@amigofiel.com.br</li>
-          <li>🕐 Seg a Sáb, 8h às 19h</li>
+          <li>🕐 Mon to Sat, 8am to 7pm</li>
         </ul>
       </div>
       <div class="footer__news">
-        <h3>Novidades</h3>
-        <p>Receba dicas e ofertas no seu e-mail.</p>
+        <h3>News</h3>
+        <p>Get tips and offers in your inbox.</p>
         <form class="newsletter" id="newsletterForm" novalidate>
-          <label class="sr-only" for="newsEmail">Seu e-mail</label>
-          <input type="email" id="newsEmail" name="email" placeholder="Digite seu e-mail" required>
-          <button type="submit" class="btn btn--primary">Assinar</button>
+          <label class="sr-only" for="newsEmail">Your email</label>
+          <input type="email" id="newsEmail" name="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn--primary">Subscribe</button>
         </form>
         <p class="form__msg" id="newsMsg" role="status"></p>
       </div>
     </div>
     <div class="container footer__bottom">
-      <p>© <span id="year"></span> Pet Shop Amigo Fiel. Todos os direitos reservados.</p>
+      <p>© <span id="year"></span> Amigo Fiel Pet Shop. All rights reserved.</p>
     </div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Quero%20agendar%20um%20atendimento%20no%20Amigo%20Fiel" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <a class="whatsapp-float" href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Quero%20agendar%20um%20atendimento%20no%20Amigo%20Fiel" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <span aria-hidden="true">💬</span>
   </a>
 
